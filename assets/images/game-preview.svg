@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <!-- Border -->
+  <rect x="10" y="10" width="620" height="460" rx="10" ry="10" fill="white" stroke="#4a90e2" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="320" y="50" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Game Preview</text>
+  
+  <!-- Score Board -->
+  <rect x="183" y="80" width="120" height="40" rx="5" ry="5" fill="#bbada0"/>
+  <text x="243" y="105" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Score: 68</text>
+  
+  <rect x="337" y="80" width="120" height="40" rx="5" ry="5" fill="#bbada0"/>
+  <text x="397" y="105" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Target: 256</text>
+  
+  <!-- Hex Grid -->
+  <!-- Row 1 -->
+  <polygon points="192,160 212,145 232,160 232,190 212,205 192,190" fill="#EDE0C8" stroke="#bbada0" stroke-width="2"/>
+  <text x="212" y="175" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#776e65">4</text>
+  
+  <polygon points="272,160 292,145 312,160 312,190 292,205 272,190" fill="#F2B179" stroke="#bbada0" stroke-width="2"/>
+  <text x="292" y="175" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">8</text>
+  
+  <polygon points="352,160 372,145 392,160 392,190 372,205 352,190" fill="#F2B179" stroke="#bbada0" stroke-width="2"/>
+  <text x="372" y="175" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">8</text>
+  
+  <polygon points="432,160 452,145 472,160 472,190 452,205 432,190" fill="#F2B179" stroke="#bbada0" stroke-width="2"/>
+  <text x="452" y="175" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">8</text>
+  
+  <!-- Row 2 -->
+  <polygon points="192,230 212,215 232,230 232,260 212,275 192,260" fill="#F2B179" stroke="#bbada0" stroke-width="2"/>
+  <text x="212" y="245" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">8</text>
+  
+  <polygon points="272,230 292,215 312,230 312,260 292,275 272,260" fill="#F59563" stroke="#bbada0" stroke-width="2"/>
+  <text x="292" y="245" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">16</text>
+  
+  <polygon points="352,230 372,215 392,230 392,260 372,275 352,260" fill="#F2B179" stroke="#bbada0" stroke-width="2"/>
+  <text x="372" y="245" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">8</text>
+  
+  <polygon points="432,230 452,215 472,230 472,260 452,275 432,260" fill="#F2B179" stroke="#bbada0" stroke-width="2"/>
+  <text x="452" y="245" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">8</text>
+  
+  <!-- Row 3 -->
+  <polygon points="192,300 212,285 232,300 232,330 212,345 192,330" fill="#F2B179" stroke="#bbada0" stroke-width="2"/>
+  <text x="212" y="315" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">8</text>
+  
+  <polygon points="272,300 292,285 312,300 312,330 292,345 272,330" fill="#EDE0C8" stroke="#bbada0" stroke-width="2"/>
+  <text x="292" y="315" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#776e65">4</text>
+  
+  <polygon points="352,300 372,285 392,300 392,330 372,345 352,330" fill="#F2B179" stroke="#bbada0" stroke-width="2"/>
+  <text x="372" y="315" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">8</text>
+  
+  <polygon points="432,300 452,285 472,300 472,330 452,345 432,330" fill="#F67C5F" stroke="#bbada0" stroke-width="2"/>
+  <text x="452" y="315" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">32</text>
+  
+  <!-- Controls -->
+  <circle cx="242" cy="400" r="25" fill="#4a90e2" stroke="#3a80d2" stroke-width="2"/>
+  <text x="242" y="408" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="white">←</text>
+  
+  <circle cx="302" cy="400" r="25" fill="#4a90e2" stroke="#3a80d2" stroke-width="2"/>
+  <text x="302" y="408" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="white">→</text>
+  
+  <circle cx="362" cy="400" r="25" fill="#4a90e2" stroke="#3a80d2" stroke-width="2"/>
+  <text x="362" y="408" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="white">↑</text>
+  
+  <circle cx="422" cy="400" r="25" fill="#4a90e2" stroke="#3a80d2" stroke-width="2"/>
+  <text x="422" y="408" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="white">↓</text>
+</svg>

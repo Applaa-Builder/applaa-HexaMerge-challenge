@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexaMerge Challenge</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .game-preview {
+            margin-top: 30px;
+            border: 2px solid #4a90e2;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: white;
+            max-width: 600px;
+        }
+        .hex-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 70px);
+            grid-gap: 10px;
+            margin: 20px auto;
+            justify-content: center;
+        }
+        .hex-cell {
+            width: 60px;
+            height: 60px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .hex-cell:hover {
+            transform: scale(1.1);
+        }
+        .hex-cell.value-2 { background-color: #EEE4DA; }
+        .hex-cell.value-4 { background-color: #EDE0C8; }
+        .hex-cell.value-8 { background-color: #F2B179; color: white; }
+        .hex-cell.value-16 { background-color: #F59563; color: white; }
+        .hex-cell.value-32 { background-color: #F67C5F; color: white; }
+        .hex-cell.value-64 { background-color: #F65E3B; color: white; }
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .control-btn {
+            width: 40px;
+            height: 40px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .score-board {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto;
+            max-width: 300px;
+        }
+        .score-item {
+            background-color: #bbada0;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .how-to {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .how-to h2 {
+            color: #4a90e2;
+        }
+        .how-to ol {
+            margin-left: 20px;
+        }
+        .how-to li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HexaMerge Challenge</h1>
+        <p>Welcome to the HexaMerge Challenge game! This is an interactive preview of the game.</p>
+        
+        <div class="game-preview">
+            <h2>Game Preview</h2>
+            <div class="score-board">
+                <div class="score-item">Score: 68</div>
+                <div class="score-item">Target: 256</div>
+            </div>
+            
+            <div class="hex-grid">
+                <div class="hex-cell value-2">2</div>
+                <div class="hex-cell value-4">4</div>
+                <div class="hex-cell value-2">2</div>
+                <div class="hex-cell value-8">8</div>
+                <div class="hex-cell value-4">4</div>
+                <div class="hex-cell value-16">16</div>
+                <div class="hex-cell value-2">2</div>
+                <div class="hex-cell value-4">4</div>
+                <div class="hex-cell value-8">8</div>
+                <div class="hex-cell value-2">2</div>
+                <div class="hex-cell value-4">4</div>
+                <div class="hex-cell value-32">32</div>
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn">←</button>
+                <button class="control-btn">→</button>
+                <button class="control-btn">↑</button>
+                <button class="control-btn">↓</button>
+            </div>
+        </div>
+        
+        <div class="how-to">
+            <h2>How to Play</h2>
+            <ol>
+                <li>Swipe or use arrow buttons to move all tiles in one direction.</li>
+                <li>When two tiles with the same number touch, they merge into one with their sum.</li>
+                <li>Create a tile with the target value to win the level.</li>
+                <li>If the grid fills up with no possible merges, the game is over.</li>
+            </ol>
+        </div>
+        
+        <h2>View on Your Computer</h2>
+        <p>You can view this app without a mobile device in two ways:</p>
+        <ol>
+            <li>Using the current web preview (you're looking at it now)</li>
+            <li>Running the full Expo web version (when configuration issues are fixed)</li>
+        </ol>
+        
+        <a href="#" class="button" id="startButton">Try Interactive Demo</a>
+    </div>
+
+    <script>
+        // Simple interactive demo
+        document.getElementById('startButton').addEventListener('click', function() {
+            alert('Full interactive demo coming soon! This is just a visual preview.');
+        });
+        
+        // Make hex cells interactive
+        const hexCells = document.querySelectorAll('.hex-cell');
+        hexCells.forEach(cell => {
+            cell.addEventListener('click', function() {
+                this.classList.toggle('value-' + this.textContent);
+                if (this.textContent === '2') {
+                    this.textContent = '4';
+                    this.className = 'hex-cell value-4';
+                } else if (this.textContent === '4') {
+                    this.textContent = '8';
+                    this.className = 'hex-cell value-8';
+                } else if (this.textContent === '8') {
+                    this.textContent = '16';
+                    this.className = 'hex-cell value-16';
+                } else if (this.textContent === '16') {
+                    this.textContent = '32';
+                    this.className = 'hex-cell value-32';
+                } else if (this.textContent === '32') {
+                    this.textContent = '64';
+                    this.className = 'hex-cell value-64';
+                } else {
+                    this.textContent = '2';
+                    this.className = 'hex-cell value-2';
+                }
+            });
+        });
+        
+        // Make control buttons interactive
+        const controlBtns = document.querySelectorAll('.control-btn');
+        controlBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('Direction: ' + this.textContent + ' - This would move all tiles in this direction in the full game.');
+            });
+        });
+    </script>
+</body>
+</html>

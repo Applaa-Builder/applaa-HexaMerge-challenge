@@ -3,6 +3,8 @@ Created by Rork
 
 A challenging puzzle game built with React Native and Expo where players merge hexagonal tiles to reach higher numbers.
 
+![HexaMerge Challenge Game Preview](assets/images/game-preview.svg)
+
 ## Game Description
 
 HexaMerge Challenge is a strategic puzzle game where players navigate and merge hexagonal tiles on a grid. The goal is to combine tiles of the same value to create higher-value tiles, manage the board efficiently, and achieve the highest score possible.
@@ -35,6 +37,11 @@ Before you begin, ensure you have the following installed:
 
 2. Install dependencies:
    ```
+   npm install
+   ```
+   
+   Alternatively, if you have Bun installed:
+   ```
    bun install
    ```
 
@@ -42,6 +49,11 @@ Before you begin, ensure you have the following installed:
 
 To start the development server with Expo:
 
+```
+npx expo start
+```
+
+Or if you have Bun installed:
 ```
 bun start
 ```
@@ -53,6 +65,11 @@ This will start the Expo development server and provide you with options to run 
 
 For web development:
 
+```
+npx expo start --web
+```
+
+Or with Bun:
 ```
 bun start-web
 ```
