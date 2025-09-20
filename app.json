@@ -22,7 +22,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "app.rork.hexamerge-challenge"
+      "package": "com.mithun40.hexamergechallenge"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
@@ -37,6 +37,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f85e7fcf-aec7-41ef-96f9-60244b36ec8c"
+      }
     }
   }
 }
